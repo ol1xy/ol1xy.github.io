@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link href="style1.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Район Z</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать в Район Z</h1>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="/pictures/map.jpg" alt="Карта Района Z" class="map-image">
+                </div>
+                <div class="slide">
+                    <img src="/pictures/RockfordHillsSign-Map.jpg" alt="Карта Рокфорд Хиллз" class="map-image">
+                    <div class="points">
+                        <div class="point" style="top: 40%; left: 20%;">
+                            <span class="point-name">Парк Солнечный</span>
+                        </div>
+                        <div class="point" style="top: 60%; left: 60%;">
+                            <span class="point-name">Аквапарк "Волна"</span>
+                        </div>
+                        <div class="point" style="top: 70%; left: 30%;">
+                            <span class="point-name">Ресторан "Гурман"</span>
+                        </div>
+                        <div class="point" style="top: 20%; left: 20%;">
+                            <span class="point-name">Кинотеатр "Люкс"</span>
+                        </div>
+                        <div class="point" style="top: 80%; left: 70%;">
+                            <span class="point-name">Музей Современного Искусства</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="prev">&laquo;</button>
+                <button class="next">&raquo;</button>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+        </div>
+        <p style="font-size: 25px; color: #555;">
+    Дорогие жители и гости нашего прекрасного города Рокфорд Хиллз! Мы рады представить вам новые места для отдыха и развлечений.
+    Рокфорд Хиллз - это динамично развивающийся город, где царит атмосфера уюта и процветания. Численность населения составляет 150 тысяч человек, а комфортный климат делает его идеальным местом для жизни и отдыха.</p>
+
+<p style="font-size: 25px; color: #555;">
+    За последние три года в Рокфорд Хиллз были реализованы масштабные проекты по развитию городской инфраструктуры. В каждом из трех районов города - Z, O, V - были созданы современные объекты, способствующие радостному и насыщенному образу жизни горожан:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Район Z:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Аквапарк "Волна" - это райское место для семейного отдыха, где можно весело провести время, освежиться в жаркий день и насладиться водными аттракционами.
+    Парк "Солнечный" - идеальное место для прогулок, пикников, спортивных занятий и просто отдыха на свежем воздухе. Он прекрасно подходит для семей с детьми, предлагая множество игровых площадок и зеленых зон.</p>
+
+<p style="font-size: 25px; color: #555;">
+    Район O:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Парк аттракционов "Веселая гавань" - это место, где каждый найдет себе развлечение по вкусу, от самых маленьких до взрослых. Яркие аттракционы, красочные декорации и веселая атмосфера создают праздничное настроение.
+    Боулинг "Strike Zone" - современный боулинг-клуб, где можно провести время с друзьями, семьей или коллегами. Это идеальное место для дружеского соревнования и хорошего настроения.</p>
+
+<p style="font-size: 25px; color: #555;">
+    Район V:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Театр "Искусство" - это очаг культуры, где проходят спектакли, концерты, выставки, предлагая горожанам доступ к прекрасному миру искусства.
+    Футбольный стадион "Арена" - место для спортивных состязаний и объединения местных жителей вокруг общей страсти. Он является центром спортивной жизни города и вдохновляет на здоровый образ жизни.</p>
+
+<p style="font-size: 25px; color: #555;">
+    Успех этих проектов:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Высокая посещаемость всех объектов свидетельствует об их востребованности жителями города.
+    Положительные отзывы горожан о новых объектах - это лучшая награда за труды администрации Рокфорд Хиллз.
+    Повышение качества жизни в городе и укрепление его статуса как привлекательного места для жизни и отдыха.</p>
+
+<p style="font-size: 25px; color: #555;">
+    Рокфорд Хиллз - это город, где жизнь бьет ключом, а счастье - это повседневная реальность!</p>
+
+<p style="font-size: 25px; color: #555;">
+    Пусть ваше пребывание в нашем городе будет наполнено радостью, интересными событиями и незабываемыми впечатлениями. Приятного времяпрепровождения!</p>
+        <p style="text-align: right; font-size: 16px; color: #555;">
+            С уважением, ваш мэр
+        </p>
+        <p style="text-align: right; font-size: 16px; color: #555;">
+            18 июня 2024 года
+        </p>
+        <h2>Новые места</h2>
+    <div class="place">
+        <h3>Парк Солнечный</h3>
+        <img src="/pictures/park.jpg" alt="Парк Солнечный">
+        <p>Категория: Парки</p>
+        <p>Описание: Прекрасное место для отдыха всей семьей, с обилием зелени и зон для пикника.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+
+            <div>Понедельник:</div>
+            <div class="day">
+                <div class="bar" style="width: 20%;"></div>
+            </div>
+            <div>Вторник:</div>
+            <div class="day">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <div>Среда:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Четверг:</div>
+            <div class="day">
+                <div class="bar" style="width: 40%;"></div>
+            </div>
+            <div>Пятница:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div>Суббота:</div>
+            <div class="day">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+            <div>Воскресенье:</div>
+            <div class="day">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="place">
+        <h3>Музей Современного Искусства</h3>
+        <img src="/pictures/museum.jpg" alt="Музей Современного Искусства">
+        <p>Категория: Музеи</p>
+        <p>Описание: Здесь вы найдете экспонаты современных художников и интерактивные выставки.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+
+            <div>Понедельник:</div>
+            <div class="day">
+                <div class="bar" style="width: 20%;"></div>
+            </div>
+            <div>Вторник:</div>
+            <div class="day">
+                <div class="bar" style="width: 60%;"></div>
+            </div>
+            <div>Среда:</div>
+            <div class="day">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+            <div>Четверг:</div>
+            <div class="day">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <div>Пятница:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Суббота:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div>Воскресенье:</div>
+            <div class="day">
+                <div class="bar" style="width: 40%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="place">
+        <h3>Ресторан "Гурман"</h3>
+        <img src="/pictures/restaurant.jpg" alt="Ресторан Гурман">
+        <p>Категория: Рестораны</p>
+        <p>Описание: Изысканная кухня с блюдами на любой вкус от лучших шеф-поваров.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+
+            <div>Понедельник:</div>
+            <div class="day">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <div>Вторник:</div>
+            <div class="day">
+                <div class="bar" style="width: 30%;"></div>
+            </div>
+            <div>Среда:</div>
+            <div class="day">
+                <div class="bar" style="width: 60%;"></div>
+            </div>
+            <div>Четверг:</div>
+            <div class="day">
+                <div class="bar" style="width: 40%;"></div>
+            </div>
+            <div>Пятница:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Суббота:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div>Воскресенье:</div>
+            <div class="day">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="place">
+        <h3>Кинотеатр "Люкс"</h3>
+        <img src="/pictures/cinema.jpg" alt="Кинотеатр Люкс">
+        <p>Категория: Кинотеатры</p>
+        <p>Описание: Современный кинотеатр с последними новинками кино и уютными залами.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+
+            <div>Понедельник:</div>
+            <div class="day">
+                <div class="bar" style="width: 40%;"></div>
+            </div>
+            <div>Вторник:</div>
+            <div class="day">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <div>Среда:</div>
+            <div class="day">
+                <div class="bar" style="width: 60%;"></div>
+            </div>
+            <div>Четверг:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Пятница:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div>Суббота:</div>
+            <div class="day">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+            <div>Воскресенье:</div>
+            <div class="day">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="place">
+        <h3>Аквапарк "Волна"</h3>
+        <img src="/pictures/acva.jpg" alt="Аквапарк Волна">
+        <p>Категория: Развлечения</p>
+        <p>Описание: Большой аквапарк с водными горками, бассейнами и зоной отдыха.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+
+            <div>Понедельник:</div>
+            <div class="day">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <div>Вторник:</div>
+            <div class="day">
+                <div class="bar" style="width: 60%;"></div>
+            </div>
+            <div>Среда:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Четверг:</div>
+            <div class="day">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+            <div>Пятница:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div>Суббота:</div>
+            <div class="day">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+            <div>Воскресенье:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+        </div>
+    </div>
+        <h2>Отзывы</h2>
+    <h3>Парк Солнечный</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="/pictures/avatar.png" alt="Марина Васильева">
+            <h3>Марина Васильева</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Мой любимый парк. Отличное место для прогулок и отдыха с семьей!</p>
+        </div>
+        <div class="review">
+            <img src="/pictures/avatar2.png" alt="Алексей Иванов">
+            <h3>Алексей Иванов</h3>
+            <p>Оценка: 1 ⭐</p>
+            <p>Парк был грязным, и много мусора повсюду. Очень разочарован.</p>
+        </div>
+        <div class="review">
+            <img src="/pictures/avatar.png" alt="Ирина Кузьмина">
+            <h3>Ирина Кузьмина</h3>
+            <p>Оценка: 4 ⭐</p>
+            <p>Приятное место для отдыха, но иногда бывает слишком многолюдно.</p>
+        </div>
+    </div>
+    <h3>Музей Современного Искусства</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Игорь Смирнов">
+            <h3>Игорь Смирнов</h3>
+            <p>Оценка: 4 ⭐</p>
+            <p>Музей современного искусства удивил разнообразием экспозиций. Очень интересно!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Елена Морозова">
+            <h3>Елена Морозова</h3>
+            <p>Оценка: 3 ⭐</p>
+            <p>Музей был интересным, но некоторые экспозиции казались скучными.</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Владимир Новиков">
+            <h3>Владимир Новиков</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Очень понравилась выставка современных художников. Рекомендую!</p>
+        </div>
+    </div>
+    <h3>Ресторан "Гурман"</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Ольга Петрова">
+            <h3>Ольга Петрова</h3>
+            <p>Оценка: 2 ⭐</p>
+            <p>Еда в ресторане была не на высоте, ожидала большего за такие деньги.</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Андрей Павлов">
+            <h3>Андрей Павлов</h3>
+            <p>Оценка: 2 ⭐</p>
+            <p>Ресторан "Гурман" разочаровал обслуживанием и долгим ожиданием блюд.</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Марина Королева">
+            <h3>Марина Королева</h3>
+            <p>Оценка: 4 ⭐</p>
+            <p>Вкусная еда и приятная атмосфера, но цены немного завышены.</p>
+        </div>
+    </div>
+    <h3>Кинотеатр "Люкс"</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Павел Сергеев">
+            <h3>Павел Сергеев</h3>
+            <p>Оценка: 4 ⭐</p>
+            <p>Кинотеатр "Люкс" порадовал новыми фильмами и комфортом. Рекомендую!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Александр Зайцев">
+            <h3>Александр Зайцев</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Залы всегда чистые, персонал вежливый и услужливый, а выбор фильмов широкий. люблю их систему бронирования билетов онлайн - это очень удобно!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Наталья Смирнова">
+            <h3>Наталья Смирнова</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Отличный кинотеатр с удобными креслами и хорошим звуком.</p>
+        </div>
+    </div>
+    <h3>Аквапарк "Волна"</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Светлана Кузнецова">
+            <h3>Светлана Кузнецова</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Аквапарк "Волна" - отличное место для семейного отдыха! Дети в восторге!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Иван Петров">
+            <h3>Иван Петров</h3>
+            <p>Оценка: 4 ⭐</p>
+            <p>Хороший аквапарк, но немного дорогие билеты.</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Татьяна Орлова">
+            <h3>Татьяна Орлова</h3>
+            <p>Оценка: 3 ⭐</p>
+            <p>Понравилось, но в выходные слишком много людей.</p>
+        </div>
+    </div>
+     <script src="slider.js"></script>
+</body>
+</html>
