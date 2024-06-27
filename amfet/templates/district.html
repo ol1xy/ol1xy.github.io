@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="{{ url_for('static', filename='style1.css') }}" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Район {{ district.name }}</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать в {{ district.name }}</h1>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="{{ url_for('static', filename='pictures/map2.png') }}" alt="Карта {{ district.name }}" class="map-image">
+                </div>
+                <div class="slide">
+                    <img src="{{ url_for('static', filename='pictures/Map21.jpg') }}" alt="Карта {{ district.name }}" class="map-image">
+                    <div class="points">
+                        {% for place in places %}
+                            <div class="point">
+                                <span class="point-name">{{ place.name }}</span>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="prev">&laquo;</button>
+                <button class="next">&raquo;</button>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+        </div>
+        <p style="text-align: center; font-size: 18px; color: #555;">
+            Дорогие жители и гости нашего прекрасного района! Мы рады представить вам новые места для отдыха и развлечений. Пусть ваше пребывание в нашем районе будет наполнено радостью, интересными событиями и незабываемыми впечатлениями. Приятного времяпрепровождения!
+        </p>
+        <p style="text-align: right; font-size: 16px; color: #555;">
+            С уважением, ваш мэр
+        </p>
+        <p style="text-align: right; font-size: 16px; color: #555;">
+            20 июня 2024 года
+        </p>
+        <h2>Новые места</h2>
+        {% for place in places %}
+        <div class="place">
+            <h3>{{ place.name }}</h3>
+            <img src="{{ url_for('static', filename='place.image_url) }}" alt="{{ place.name }}">
+            <p>Категория: {{ place.category }}</p>
+            <p>Описание: {{ place.description }}</p>
+            <div class="attendance">
+                <h4>Посещаемость:</h4>
+                {% for day, percentage in place.attendance.items() %}
+                <div>{{ day }}:</div>
+                <div class="day">
+                    <div class="bar" data-percentage="{{ percentage }}"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        {% endfor %}
+        <h2>Отзывы</h2>
+        {% for place in places %}
+        <h3>{{ place.name }}</h3>
+        <div class="reviews-container">
+            {% for review in place.reviews %}
+            <div class="review">
+                <img src="{{ url_for('static', filename='pictures/avatar.png') }}" alt="{{ review.user }}">
+                <h3>{{ review.user }}</h3>
+                <p>Оценка: {{ review.rating }} ⭐️</p>
+                <p>{{ review.review_text }}</p>
+            </div>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
+    <script src="{{ url_for('static', filename='slider.js') }}"></script>
+</body>
+</html>

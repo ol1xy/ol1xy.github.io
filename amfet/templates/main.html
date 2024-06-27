@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link href="../static/css/style1.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Район V</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Добро пожаловать в Район V</h1>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="{{ url_for('static', filename='pictures/map3.jpg') }}" alt="Карта Района Z" class="map-image">
+                </div>
+                <div class="slide">
+                    <img src="/pictures/Map3.PNG" alt="Карта Рокфорд Хиллз" class="map-image">
+                    <div class="points">
+                        <div class="point" style="top: 40%; left: 55%;">
+                            <span class="point-name">Кафе "Кофейная Точка"</span>
+                        </div>
+                        <div class="point" style="top: 60%; left: 70%;">
+                            <span class="point-name">Ресторан "Гриль Хаус"</span>
+                        </div>
+                        <div class="point" style="top: 68%; left: 33%;">
+                            <span class="point-name">Футбольный стадион "Арена"</span>
+                        </div>
+                        <div class="point" style="top: 40%; left: 39%;">
+                            <span class="point-name">Кондитерская "Cake Home"</span>
+                        </div>
+                        <div class="point" style="top: 25%; left: 70%;">
+                            <span class="point-name">Театр "Искусство"</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <button class="prev">&laquo;</button>
+                <button class="next">&raquo;</button>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(0)"></span>
+                <span class="dot" onclick="currentSlide(1)"></span>
+            </div>
+        </div>
+        <p style="font-size: 25px; color: #555;">
+    Дорогие жители и гости нашего прекрасного города Рокфорд Хиллз! Мы рады представить вам новые места для отдыха и развлечений.
+    Рокфорд Хиллз - это динамично развивающийся город, где царит атмосфера уюта и процветания. Численность населения составляет 150 тысяч человек, а комфортный климат делает его идеальным местом для жизни и отдыха.</p>
+
+<p style="font-size: 25px; color: #555;">
+    За последние три года в Рокфорд Хиллз были реализованы масштабные проекты по развитию городской инфраструктуры. В каждом из трех районов города - Z, O, V - были созданы современные объекты, способствующие радостному и насыщенному образу жизни горожан:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Район Z:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Аквапарк "Волна" - это райское место для семейного отдыха, где можно весело провести время, освежиться в жаркий день и насладиться водными аттракционами.
+    Парк "Солнечный" - идеальное место для прогулок, пикников, спортивных занятий и просто отдыха на свежем воздухе. Он прекрасно подходит для семей с детьми, предлагая множество игровых площадок и зеленых зон.</p>
+
+<p style="font-size: 25px; color: #555;">
+    Район O:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Парк аттракционов "Веселая гавань" - это место, где каждый найдет себе развлечение по вкусу, от самых маленьких до взрослых. Яркие аттракционы, красочные декорации и веселая атмосфера создают праздничное настроение.
+    Боулинг "Strike Zone" - современный боулинг-клуб, где можно провести время с друзьями, семьей или коллегами. Это идеальное место для дружеского соревнования и хорошего настроения.</p>
+
+<p style="font-size: 25px; color: #555;">
+    Район V:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Театр "Искусство" - это очаг культуры, где проходят спектакли, концерты, выставки, предлагая горожанам доступ к прекрасному миру искусства.
+    Футбольный стадион "Арена" - место для спортивных состязаний и объединения местных жителей вокруг общей страсти. Он является центром спортивной жизни города и вдохновляет на здоровый образ жизни.</p>
+
+<p style="font-size: 25px; color: #555;">
+    Успех этих проектов:</p>
+
+<p style="font-size: 25px; color: #555;">
+    Высокая посещаемость всех объектов свидетельствует об их востребованности жителями города.
+    Положительные отзывы горожан о новых объектах - это лучшая награда за труды администрации Рокфорд Хиллз.
+    Повышение качества жизни в городе и укрепление его статуса как привлекательного места для жизни и отдыха.</p>
+
+<p style="font-size: 25px; color: #555;">
+    Рокфорд Хиллз - это город, где жизнь бьет ключом, а счастье - это повседневная реальность!</p>
+
+<p style="font-size: 25px; color: #555;">
+    Пусть ваше пребывание в нашем городе будет наполнено радостью, интересными событиями и незабываемыми впечатлениями. Приятного времяпрепровождения!</p>
+
+
+
+        <p style="text-align: right; font-size: 16px; color: #555;">
+            С уважением, ваш мэр</p>
+        <p style="text-align: right; font-size: 22px; color: #555;">
+            18 июня 2024 года</p>
+        <h2>Новые места</h2>
+    <div class="place">
+        <h3>Ресторан "Гриль Хаус"</h3>
+        <img src="/pictures/grill.jpg" alt="Ресторан Гриль Хаус">
+        <p>Категория: Рестораны</p>
+        <p>Описание: Современная атмосфера и авторская кухня, которая покорит даже самых требовательных гурманов.  Откройте для себя новые вкусовые сочетания и насладитесь изысканным сервисом.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+            <div>
+                <div>Понедельник:</div>
+                <div class="day">
+                    <div class="bar" style="width: 25%;"></div>
+                </div>
+            </div>
+            <div>
+                <div>Вторник:</div>
+                <div class="day">
+                    <div class="bar" style="width: 45%;"></div>
+                </div>
+            </div>
+            <div>
+                <div>Среда:</div>
+                <div class="day">
+                    <div class="bar" style="width: 65%;"></div>
+                </div>
+            </div>
+            <div>
+                <div>Четверг:</div>
+                <div class="day">
+                    <div class="bar" style="width: 35%;"></div>
+                </div>
+            </div>
+            <div>
+                <div>Пятница:</div>
+                <div class="day">
+                    <div class="bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div>
+                <div>Суббота:</div>
+                <div class="day">
+                    <div class="bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div>
+                <div>Воскресенье:</div>
+                <div class="day">
+                    <div class="bar" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="place">
+        <h3>Кафе "Кофейная Точка"</h3>
+        <img src="/pictures/coffee.jpg" alt="Кафе Кофейная Точка">
+        <p>Категория: Кафе</p>
+        <p>Описание: Уютное кафе с богатым выбором ароматного кофе, свежей выпечкой и легкими закусками.  Идеальное место для дружеских встреч, деловых переговоров или просто приятного времяпрепровождения.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+
+            <div>Понедельник:</div>
+            <div class="day">
+                <div class="bar" style="width: 20%;"></div>
+            </div>
+            <div>Вторник:</div>
+            <div class="day">
+                <div class="bar" style="width: 60%;"></div>
+            </div>
+            <div>Среда:</div>
+            <div class="day">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+            <div>Четверг:</div>
+            <div class="day">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <div>Пятница:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Суббота:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div>Воскресенье:</div>
+            <div class="day">
+                <div class="bar" style="width: 40%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="place">
+        <h3>Кондитерская "Cake Home"</h3>
+        <img src="/pictures/chocolate.jpg" alt="Кондитерская Cake Home">
+        <p>Категория: Кондитерские</p>
+        <p>Описание: Изысканные торты, пирожные, десерты и сладости ручной работы.  Откройте для себя мир сладких наслаждений и побалуйте себя нежным вкусом.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+            <div>Понедельник:</div>
+            <div class="day">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <div>Вторник:</div>
+            <div class="day">
+                <div class="bar" style="width: 30%;"></div>
+            </div>
+            <div>Среда:</div>
+            <div class="day">
+                <div class="bar" style="width: 60%;"></div>
+            </div>
+            <div>Четверг:</div>
+            <div class="day">
+                <div class="bar" style="width: 40%;"></div>
+            </div>
+            <div>Пятница:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Суббота:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div>Воскресенье:</div>
+            <div class="day">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="place">
+        <h3> Футбольный стадион "Арена"</h3>
+        <img src="/pictures/stadium.jpg" alt="Футбольный стадион Арена">
+        <p>Категория: Спортивные объекты</p>
+        <p>Описание:  Современный стадион, который вмещает тысячи болельщиков.  Здесь проводятся  яркие футбольные матчи, концерты и другие мероприятия.  Станьте частью спортивной атмосферы и получите незабываемые эмоции.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+            <div>Понедельник:</div>
+            <div class="day">
+                <div class="bar" style="width: 40%;"></div>
+            </div>
+            <div>Вторник:</div>
+            <div class="day">
+                <div class="bar" style="width: 50%;"></div>
+            </div>
+            <div>Среда:</div>
+            <div class="day">
+                <div class="bar" style="width: 60%;"></div>
+            </div>
+            <div>Четверг:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Пятница:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div>Суббота:</div>
+            <div class="day">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+            <div>Воскресенье:</div>
+            <div class="day">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="place">
+        <h3>Театр "Искусство"</h3>
+        <img src="  " alt="Театр Искусство">
+        <p>Категория: Театры</p>
+        <p>Описание: Театр, предлагающий классические и современные постановки.  Погрузитесь в мир театрального искусства и насладитесь талантом актеров, режиссеров и художников.</p>
+        <div class="attendance">
+            <h4>Посещаемость:</h4>
+
+            <div>Понедельник:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Вторник:</div>
+            <div class="day">
+                <div class="bar" style="width: 60%;"></div>
+            </div>
+            <div>Среда:</div>
+            <div class="day">
+                <div class="bar" style="width: 70%;"></div>
+            </div>
+            <div>Четверг:</div>
+            <div class="day">
+                <div class="bar" style="width: 80%;"></div>
+            </div>
+            <div>Пятница:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+            <div>Суббота:</div>
+            <div class="day">
+                <div class="bar" style="width: 100%;"></div>
+            </div>
+            <div>Воскресенье:</div>
+            <div class="day">
+                <div class="bar" style="width: 90%;"></div>
+            </div>
+        </div>
+    </div>
+        <h2>Отзывы</h2>
+    <h3>Ресторан "Гриль Хаус"</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="/pictures/avatar.png" alt="Екатерина Смирнова">
+            <h3>Екатерина Смирнова</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Отличное место для любителей мяса!  Стейки просто великолепны, приготовлены идеально.  Обслуживание быстрое и дружелюбное.  Рекомендую всем!</p>
+        </div>
+        <div class="review">
+            <img src="/pictures/avatar2.png" alt="Андрей Петров">
+            <h3>Андрей Петров</h3>
+            <p>Оценка: 3 ⭐</p>
+            <p>Заказали курицу-гриль, но она была суховатой и безвкусной.  Жаль, что блюдо не оправдало ожиданий.  Может, просто не повезло с заказом</p>
+        </div>
+        <div class="review">
+            <img src="/pictures/avatar.png" alt=" Ольга Михайлова">
+            <h3> Ольга Михайлова</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Прекрасная атмосфера, уютная и стильная.  Хорошее меню, есть выбор не только мяса, но и рыбы и вегетарианских блюд.  Придем сюда еще раз!</p>
+        </div>
+    </div>
+    <h3>Кафе "Кофейная Точка"</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Иван Иванов">
+            <h3>Иван Иванов</h3>
+            <p>Оценка: 4 ⭐</p>
+            <p>Очень уютное кафе, с приятной атмосферой.  Кофе просто потрясающий, ароматный и вкусный.  Заказывали десерт, тоже понравился.  Обязательно вернемся!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Елена Морозова">
+            <h3>Елена Морозова</h3>
+            <p>Оценка: 2 ⭐</p>
+            <p>Цены немного выше среднего.  К сожалению, в кафе было шумно, из-за чего сложно было нормально пообщаться.</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Дмитрий Кузнецов">
+            <h3>Дмитрий Кузнецов</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Быстрый и приветливый персонал, быстро обслужили и рассказали про все десерты.  Кофе очень вкусный, большой выбор сортов.  Идеальное место для перерыва!</p>
+        </div>
+    </div>
+    <h3>Кондитерская "Cake Home"</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Анна Иванова">
+            <h3>Анна Иванова</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Великолепные торты!  Пробовали клубничный и шоколадный, оба просто шедевры.  Идеально подходит для чаепития или праздничного ужина.  Очень рекомендую!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Александр Сергеев">
+            <h3> Александр Сергеев</h3>
+            <p>Оценка: 3 ⭐</p>
+            <p>Не очень широкий выбор напитков, только кофе и чай.  Хотелось бы увидеть больше вариантов.  Цены на десерты немного высоковаты.</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt=" Мария Федорова">
+            <h3> Мария Федорова</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Красивая атмосфера, много места, можно спокойно посидеть.  Хороший выбор десертов, есть даже безглютеновые варианты.  Обязательно вернемся за новым тортом!</p>
+        </div>
+    </div>
+    <h3>Футбольный стадион "Арена"</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Алексей Соколов">
+            <h3>Алексей Соколов</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Отличная атмосфера на матчах!  Фанаты создают невероятную энергетику.  Стадион удобный, с хорошим обзором с любого места.  Рекомендую всем болельщикам!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Максим Романов">
+            <h3>Максим Романов</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Хорошо организованный стадион, удобные места, хорошая видимость.  Приятно проводить время на матчах.  Всегда хочется вернуться!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Евгения Козлова">
+            <h3>Евгения Козлова</h3>
+            <p>Оценка: 3 ⭐</p>
+            <p>Цены на еду и напитки на стадионе очень высокие.  Также бывает сложно добраться до стадиона в дни матчей из-за пробок.</p>
+        </div>
+    </div>
+    <h3>Театр "Искусство"</h3>
+    <div class="reviews-container">
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Алина Григорьева">
+            <h3>Алина Григорьева</h3>
+            <p>Оценка: 5 ⭐</p>
+            <p>Отличные спектакли!  Актеры играют великолепно, сцена и декорации просто потрясающие.  Обязательно придем еще на новый спектакль!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Кирилл Морозов">
+            <h3>Кирилл Морозов</h3>
+            <p>Оценка: 4 ⭐</p>
+            <p>Уютный театр с комфортабельными креслами.  Замечательное место для вечера с любимыми.  Рекомендую всем любителям театрального искусства!</p>
+        </div>
+        <div class="review">
+            <img src="https://via.placeholder.com/100x100.png?text=Аватар" alt="Виктория Новикова">
+            <h3>Виктория Новикова</h3>
+            <p>Оценка: 3 ⭐</p>
+            <p>Цены на билеты немного высокие, особенно на популярные спектакли.  Также бывает сложно найти парковку рядом с театром.</p>
+        </div>
+    </div>
+     <script src="../static//scripts/slider.js"></script>
+
+</body>
+</html>
